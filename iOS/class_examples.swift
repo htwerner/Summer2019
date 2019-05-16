@@ -3,7 +3,7 @@ import Foundation
 class Animal {
 
     var name: String
-    
+
     init(name: String) {
         self.name = name
     }
@@ -42,3 +42,15 @@ myDog.makeSound()
 var myCat = Cat(name: "Felix")
 print("You made a cat named", myCat.name)
 myCat.makeSound()
+
+// This variable will only reference an existing object,
+// not create a new one.
+var aCat = myCat
+print("A cat is named", aCat.name)
+
+// If we change the name of the cat using the new variable,
+// it will change the name of the original object.
+aCat.name = "Summer"
+print("A cat is now named", aCat.name)
+print("My cat is now named", myCat.name)
+
