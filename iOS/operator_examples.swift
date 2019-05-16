@@ -6,7 +6,7 @@ Examples of using basic operators
 // Assignment
 //
 var animal = "bear"
-animal = "bear"
+animal = "cougar"
 
 //
 // Math operators 
