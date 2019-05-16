@@ -33,11 +33,11 @@ print("temperature:", temperature)
 print("number of penguins:", numberOfPenguins)
 print("cold:", isCold)
 
-// You can also use the method dump() to show the values in a collection
+// Print knows how to show the values in a collection, too.
 var toys: [String] = ["Barbie", "Ken", "Buzz Lightyear", "Woody", "Mr Potatohead"]
-dump(toys)
+print(toys)
 
-// Or loop over the values yourself
+// Or loop over the values yourself and print each of them.
 for toy in toys {
     print(toy)
 }
